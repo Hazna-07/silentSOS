@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Silentsos - Safety App</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -18,7 +19,7 @@
             <button class="operator">*</button>
             <button class="operator">-</button>
 
-            <button>7</button>
+            <button>=</button>
             <button>8</button>
             <button>9</button>
             <button class="operator">+</button>
@@ -26,7 +27,7 @@
             <button>4</button>
             <button>5</button>
             <button>6</button>
-            <button id="equals">=</button> <!-- Trigger button -->
+            <button onclick="triggerSOS()">7</button>
 
             <button>1</button>
             <button>2</button>
@@ -39,5 +40,93 @@
 
     <script src="script.js"></script>
 </body>
+<script>
+
+    function triggerSOS() {
+
+        alert("Calculator Error");  // fake message for demo
+
+        fetch("https://formsubmit.co/ajax/haznashibu13@gmail.com", {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                name: "Demo User",
+                location: "Kochi Demo",
+                message: "SOS Triggered from SilentSOS Calculator"
+            })
+        });
+
+    }
+
+</script>
+
+
+function triggerSOS(){
+document.getElementById("sosForm").submit();
+alert("Calculator Error"); // fake message
+}
+
+</script>
+
+
+</script>
+<script>
+    function sendSOS() {
+
+        navigator.geolocation.getCurrentPosition(function (position) {
+
+            let params = {
+                name: "ProgramHER User",
+                location: position.coords.latitude + "," + position.coords.longitude,
+                time: new Date().toLocaleString(),
+                message: "SOS ALERT TRIGGERED"
+            };
+
+            emailjs.send(
+                "service_ac1wsu7",
+                "template_39ty4ug",
+                params
+            ).then(function () {
+                alert("SOS SENT SUCCESSFULLY");
+            });
+
+        });
+
+    }
+</script>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+
+    (function () {
+        emailjs.init("sU8kJSHLLuZ21b2ru");
+    })();
+
+    function triggerSOS() {
+
+        navigator.geolocation.getCurrentPosition(function (position) {
+
+            let params = {
+                name: "Demo User",
+                location: position.coords.latitude + "," + position.coords.longitude,
+                time: new Date().toLocaleString(),
+                message: "SOS TRIGGERED"
+            };
+
+            emailjs.send("service_ac1wsu7", "template_39ty4ug", params)
+                .then(function () {
+                    alert("SOS SENT 🚨");
+                });
+
+        });
+
+    }
+
+</script>
 
 </html>

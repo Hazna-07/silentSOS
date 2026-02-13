@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silentsos - Safety App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="brand">SILENTSOS</div>
+        <input type="text" id="display" disabled placeholder="0">
+        <div class="buttons">
+            <button>C</button>
+            <button class="operator">/</button>
+            <button class="operator">*</button>
+            <button class="operator">-</button>
+
+            <button>=</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="operator">+</button>
+
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button onclick="triggerSOS()">7</button>
+
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>0</button>
+
+            <button>.</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        (function () {
+            emailjs.init("sU8kJSHLLuZ21b2ru");
+        })();
+
+        function triggerSOS() {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                let params = {
+                    name: "Demo User",
+                    location: position.coords.latitude + "," + position.coords.longitude,
+                    time: new Date().toLocaleString(),
+                    message: "SOS TRIGGERED"
+                };
+
+                emailjs.send("service_ac1wsu7", "template_39ty4ug", params)
+                    .then(function () {
+                        alert("SOS SENT 🚨");
+                    });
+            });
+        }
+    </script>
+
+</body>
+
+</html>
