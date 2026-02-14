@@ -2,27 +2,27 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# [silent-SOS] 🎯
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: [ProgramHER]
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: [Hazna.S] - [SCMS School of engineering and technology]
+- Member 2: [Haripriya Harish] - [SCMS School of engineering and technology]
 
 ### Hosted Project Link
-[mention your project hosted link here]
+[https://silent-sos-one.vercel.app/]
 
 ### Project Description
-[2-3 lines about what your project does]
+[Silent SOS Calculator is a disguised safety web app that looks like a normal calculator but secretly sends an emergency SOS alert with user location when a hidden button is pressed. It helps users quickly alert trusted contacts during unsafe situations without drawing attention.]
 
 ### The Problem statement
-[What problem are you solving?]
+[Many people cannot openly ask for help during emergencies. Traditional panic buttons are obvious and may increase risk if noticed by a threat.]
 
 ### The Solution
-[How are you solving it?]
+[We created a calculator interface that secretly triggers an SOS alert. When a hidden button is pressed, it sends an email containing the user’s name, location, time, and emergency message.]
 
 ---
 
@@ -31,25 +31,25 @@
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
+- Languages used: [HTML, CSS, JavaScript]
+- Frameworks used: [None]
+- Libraries used: [EmailJS API, Browser Geolocation API]
+- Tools used: [VS Code, GitHub, Vercel]
 
 **For Hardware:**
-- Main components: [List main components]
-- Specifications: [Technical specifications]
-- Tools required: [List tools needed]
+- Main components: [Not applicable (Software-only project)]
+- Specifications: [Not applicable (Software-only project)]
+- Tools required: [Not applicable (Software-only project)]
 
 ---
 
 ## Features
 
 List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+- Feature 1: [Disguised Calculator Interface]
+- Feature 2: [Hidden SOS Trigger Button]
+- Feature 3: [Real-Time Location Tracking]
+- Feature 4: [Automatic Emergency Email Alerts]
 
 ---
 
@@ -59,12 +59,14 @@ List the key features of your project:
 
 #### Installation
 ```bash
-[Installation commands - e.g., npm install, pip install -r requirements.txt]
+[git clone https://github.com/your-username/silent-sos.git
+cd silent-sos
+]
 ```
 
 #### Run
 ```bash
-[Run commands - e.g., npm start, python app.py]
+[open website.html]
 ```
 
 ### For Hardware:
@@ -83,26 +85,26 @@ List the key features of your project:
 
 #### Screenshots (Add at least 3)
 
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot1]("C:\Users\hrish\OneDrive\Pictures\Screenshots\sossent.png")
+*Calculator interface disguised as a normal app*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot2](""C:\Users\hrish\OneDrive\Pictures\Screenshots\email.png"")
+*hidden sos activation button
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot3]("C:\Users\hrish\OneDrive\Pictures\Screenshots\sostrigger.png")
+Emergency alert email with user details
 
 #### Diagrams
 
 **System Architecture:**
 
 ![Architecture Diagram](docs/architecture.png)
-*Explain your system architecture - components, data flow, tech stack interaction*
+*User presses hidden button → Browser gets location → EmailJS sends emergency alert*
 
 **Application Workflow:**
 
 ![Workflow](docs/workflow.png)
-*Add caption explaining your workflow*
+*User opens calculator → presses secret trigger → location captured → email sent*
 
 ---
 
@@ -137,7 +139,7 @@ List the key features of your project:
 
 #### API Documentation
 
-**Base URL:** `https://api.yourproject.com`
+**Base URL:** https://silent-sos-one.vercel.app`
 
 ##### Endpoints
 
@@ -155,7 +157,8 @@ List the key features of your project:
 ```
 
 **POST /api/endpoint**
-- **Description:** [What it does]
+- **Description:** []
+- 
 - **Request Body:**
 ```json
 {
@@ -374,34 +377,47 @@ python script.py -v --format json data.json
 
 If you used AI tools during development, document them here for transparency:
 
-**Tool Used:** [e.g., GitHub Copilot, v0.dev, Cursor, ChatGPT, Claude]
+**Tool Used:** [Chatgpt]
 
 **Purpose:** [What you used it for]
-- Example: "Generated boilerplate React components"
-- Example: "Debugging assistance for async functions"
-- Example: "Code review and optimization suggestions"
+- Help with JavaScript logic for SOS trigger
 
+EmailJS integration and debugging
+
+Designing calculator UI layout
+
+Getting browser location using Geolocation API
+
+README writing & documentation guidance
 **Key Prompts Used:**
-- "Create a REST API endpoint for user authentication"
-- "Debug this async function that's causing race conditions"
-- "Optimize this database query for better performance"
+- "How to send SOS email using EmailJS in JavaScript"
 
-**Percentage of AI-generated code:** [Approximately X%]
+"How to get live location from browser using JavaScript"
+
+"Create hidden emergency trigger inside calculator app"
+
+"Fix calculator button layout and styling"
+
+**Percentage of AI-generated code:** [Approximately 20%-30%]
 
 **Human Contributions:**
-- Architecture design and planning
-- Custom business logic implementation
-- Integration and testing
-- UI/UX design decisions
+- Project idea and concept design
 
+Calculator UI design decisions
+
+SOS workflow implementation
+
+Testing and deployment
+
+Final customization and styling
 *Note: Proper documentation of AI usage demonstrates transparency and earns bonus points in evaluation!*
 
 ---
 
 ## Team Contributions
 
-- [Name 1]: [Specific contributions - e.g., Frontend development, API integration, etc.]
-- [Name 2]: [Specific contributions - e.g., Backend development, Database design, etc.]
+- [Hazna.S]: [Backend development,SOS trigger logic,Email integration]
+- [Haripriya Harish]: [Frontend development,UI/UX design]
 - [Name 3]: [Specific contributions - e.g., UI/UX design, Testing, Documentation, etc.]
 
 ---
