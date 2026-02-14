@@ -59,7 +59,7 @@ List the key features of your project:
 
 #### Installation
 ```bash
-[git clone https://github.com/your-username/silent-sos.git
+[git clone https://github.com/Hazna-07/silent-sos.git
 cd silent-sos
 ]
 ```
